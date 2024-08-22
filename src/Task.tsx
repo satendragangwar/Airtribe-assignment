@@ -27,7 +27,7 @@ const Task = () => {
 
   const getTaskDetails = async (id: string) => {
     try {
-      const res = await fetch(`http://localhost:3000/tasks/${id}`);
+      const res = await fetch(`https://serverjs-mauve.vercel.app/api/tasks/${id}`);
       const data: TaskType = await res.json();
       console.log(data);
       setFormValues({
@@ -57,7 +57,7 @@ const Task = () => {
 
   const updateTask = async (taskId: string, task: TaskPayload) => {
     try {
-      await fetch(`http://localhost:3000/tasks/${taskId}`, {
+      await fetch(`https://serverjs-mauve.vercel.app/api/tasks/${taskId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const Task = () => {
 
   const createTask = async (task: TaskPayload) => {
     try {
-      await fetch(`http://localhost:3000/tasks/`, {
+      await fetch(`https://serverjs-mauve.vercel.app/api/tasks/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -91,7 +91,7 @@ const Task = () => {
 
   const deleteTask = async () => {
     try {
-      await fetch(`http://localhost:3000/tasks/${taskId}`, {
+      await fetch(`https://serverjs-mauve.vercel.app/api/tasks/${taskId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

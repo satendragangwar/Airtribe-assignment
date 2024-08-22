@@ -14,7 +14,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch("http://localhost:3000/tasks")
+    fetch("https://serverjs-mauve.vercel.app/api/tasks")
       .then((res) => res.json())
       .then((data) => {
         setTasks(data);
@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   const updateTask = (task: Task) => {
-    fetch(`http://localhost:3000/tasks/${task.id}`, {
+    fetch(`https://serverjs-mauve.vercel.app/api/tasks/${task.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
