@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "title": "Market Research",
+      "status": "not-started",
+      "description": "I am working on this",
+      "id": "a9fd1c24-9a7a-4eed-af1c-937b7e8489a4"
+    },
+    {
+      "title": "Finding internship",
+      "status": "in-progress",
+      "description": "Soon I will get",
+      "id": "c0e6a725-a475-471c-a066-532e0cd646d4"
+    },
+    {
+      "title": "I am a struggler",
+      "status": "completed",
+      "description": "Never lose hope",
+      "id": "89cae40e-3109-40c3-aabf-38b1c9105a6a"
+    },
+    {
+      "id": "bf0c93bf-9e4a-4605-9b8e-4da588753391",
+      "title": "SS",
+      "status": "not-started",
+      "description": "gg"
+    }
+  ]
+}
